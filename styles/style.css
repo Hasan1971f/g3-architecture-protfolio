@@ -1,67 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+
+@media screen and (max-width:576px) {
+    .nav-bar, .nav-links{
+        flex-direction: column;
+    }
 }
 
 /* shared styles */
 .display-flex{
-   display: flex;
+    display: flex;
 }
 
-/* dark o2 */
+/* dark02 */
 .text-gray{
-    color: #424242;
+    color:#424242;
 }
 
 /* dark03 */
 .text-light-gray{
-    color: #727272;
+     color: #727272;
 }
-/* Header styles */
-.bg-light{
-    background-color: rgba(255, 144, 14, 0.1);
-}
-/* navbar related styles */
+
+
+
+
+
 .btn-primary{
     background-color: #FF900E;
     color: white;
     padding: 20px 25px;
-    font-size: 1.25 rem;
-    font-weight: 600;
     border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
     border: none;
 }
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 130px;
+}
+/* header styles */
+.bg-light{
+     background-color:rgba(255, 144, 14, 0.1);
+}
+/* navbar releted styles */
 .nav-bar{
     justify-content: space-between;
     align-items: center;
-  
-    }
-
-
+    
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
 .brand{
     font-weight: 700;
     font-size: 3rem;
 }
-    .nav-item{
-    list-style: none;
-    margin-right: 30px;
-}
+
 
 .nav-link{
     text-decoration: none;
+    font-weight: 500;
+
 }
+
 
 
 .nav-bar, .banner{
     max-width: 1440px;
     margin: 0 auto;
 }
-
 /* banner related styles */
 .banner-content{
     max-width: 850px;
@@ -76,14 +91,32 @@
 }
 
 
-
-.banner-image{
+.banner-img{
     width: 100%;
 }
-
-/* Responsive media query */
+/* team and features related styles */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    }
+    .our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.features-title{
+    font-size: 2.7rem;
+}
+#quick-list{
+    font-weight: 500;
+    font-weight: 700;
+}
+/* responsive media qure */
 @media screen and (max-width:576px) {
-    .nav-bar, .nav-links{
+    .nav-bar,.nav-links{
         flex-direction: column;
     }
 }
